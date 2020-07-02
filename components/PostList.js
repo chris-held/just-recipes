@@ -18,6 +18,7 @@ const PostList = ({ posts }) => {
         value={filter}
         placeholder="Search Recipes..."
         name="Search"
+        aria-label="Search"
         onChange={(e) => setFilter(e.target.value)}
       />
       {!filtered && !filtered.length && <div>No recipes found!</div>}
