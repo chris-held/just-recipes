@@ -27,7 +27,7 @@ const PostList = ({ posts }) => {
           filtered.map((post) => {
             return (
               <li key={post.slug}>
-                <Link href={{ pathname: `/post/${post.slug}` }}>
+                <Link href="/post/[postname]" as={`/post/${post.slug}`}>
                   <a>{post.frontmatter.title}</a>
                 </Link>
               </li>
