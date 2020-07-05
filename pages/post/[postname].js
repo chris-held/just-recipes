@@ -14,7 +14,7 @@ const BlogPost = ({ siteTitle, frontmatter, markdownBody }) => {
       </Link>
       <article>
         <h1>{frontmatter.title}</h1>
-        <p className="meta">Posted {frontmatter.date}</p>
+        <p className="text-accent my-4">Posted {frontmatter.date}</p>
         <div>
           <ReactMarkdown source={markdownBody} />
         </div>

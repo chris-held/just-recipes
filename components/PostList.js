@@ -19,6 +19,7 @@ const PostList = ({ posts }) => {
         placeholder="Search Recipes..."
         name="Search"
         aria-label="Search"
+        className="my-4 shadow appearance-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         onChange={(e) => setFilter(e.target.value)}
       />
       {!filtered && !filtered.length && <div>No recipes found!</div>}
@@ -26,9 +27,9 @@ const PostList = ({ posts }) => {
         {filtered &&
           filtered.map((post) => {
             return (
-              <li key={post.slug}>
+              <li key={post.slug} className="py-1">
                 <Link href="/post/[postname]" as={`/post/${post.slug}`}>
-                  <a>{post.frontmatter.title}</a>
+                  <a className="text-lg">{post.frontmatter.title}</a>
                 </Link>
               </li>
             );

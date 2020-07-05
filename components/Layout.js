@@ -7,8 +7,8 @@ const Layout = ({ children, title, ...props }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title}</title>
       </Head>
-      <section className="layout">
-        <div className="content">{children}</div>
+      <section className="flex m-auto p-4 max-w-4xl">
+        <div className="w-full">{children}</div>
       </section>
     </>
   );
