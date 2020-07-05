@@ -6,9 +6,9 @@ const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout title={title}>
       <div>
-        <h1 className="index-header">It's Just Recipes.</h1>
+        <h1 className="text-center">It's Just Recipes.</h1>
         <main>
-          <p className="index-description">That's it. That's the site.</p>
+          <p className="text-2xl text-center">That's it. That's the site.</p>
           <PostList posts={posts} />
         </main>
       </div>
