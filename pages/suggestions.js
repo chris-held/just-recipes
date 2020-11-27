@@ -40,10 +40,12 @@ ingredients: "comma seperated list of ingredients, ex flour, salt, yeast"
           <form
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            name="suggestions"
+            methid="POST"
           >
 
             <input type="hidden" name="form-name" value="suggestions" />
-            <TextArea value={text} onChange={(e) => setText(e.target.value)} />
+            <TextArea name="suggestion" value={text} onChange={(e) => setText(e.target.value)} />
             <Button type="submit">
                 Submit
             </Button>
