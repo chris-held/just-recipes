@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import Footer from "./Footer";
 
 const PostList = ({ posts }) => {
   const [filter, setFilter] = useState("");
@@ -35,6 +36,7 @@ const PostList = ({ posts }) => {
             );
           })}
       </ul>
+      <Footer/>
     </div>
   );
 };
