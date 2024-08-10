@@ -13,18 +13,21 @@
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.5",
     "@types/mdx": "^2.0.13",
+    "date-fns": "^3.6.0",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "14.2.5",
     "next-mdx-remote": "^5.0.0",
     "path": "^0.12.7",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "showdown": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/showdown": "^2.0.6",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",

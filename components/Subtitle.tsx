@@ -5,7 +5,7 @@ export interface SubtitleProps {
 }
 
 const Subtitle = ({ children }: SubtitleProps) => {
-  return <p className="font-bold text-2xl mt-2 text-stone-400">{children}</p>;
+  return <p className="font-bold text-2xl mt-4 text-stone-400">{children}</p>;
 };
 
 export default Subtitle;

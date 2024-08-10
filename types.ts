@@ -1,8 +1,9 @@
-export interface PostMetadata {
+export interface Post {
   title: string;
   createdDate: string;
   ingredients: Ingredient[];
   tags: Tag[];
+  directions: string[];
 }
 
 export interface Ingredient {
