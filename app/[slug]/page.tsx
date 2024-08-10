@@ -18,7 +18,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         <Subtitle>Ingredients</Subtitle>
         {ingredients.map((ingredient) => (
           <div key={ingredient.name}>
-            <p>{`${ingredient.value} ${ingredient.name} ${ingredient.unitOfMeasure}`}</p>
+            <p>{`${ingredient.value}${ingredient.unitOfMeasure} ${ingredient.name} `}</p>
           </div>
         ))}
       </div>

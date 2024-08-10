@@ -29,7 +29,7 @@ export default async function Home() {
     <Page>
       <Title>Just Recipes</Title>
       <Subtitle>That&apos;s it. That&apos;s the site.</Subtitle>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 pt-2">
         {allPostsMetadata.map((post) => (
           <Link key={post.title} href={`/${post.fileName.replace(".tsx", "")}`}>
             <PostListItem post={post} />
