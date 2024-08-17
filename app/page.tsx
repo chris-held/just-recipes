@@ -6,6 +6,12 @@ import path from "path";
 import PostListItem from "@/components/PostListItem";
 import { Post } from "@/types";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Just Recipes",
+  description: "A simple recipe site",
+};
 
 export const revalidate = 60;
 

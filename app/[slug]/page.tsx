@@ -2,9 +2,20 @@ import Page from "@/components/Page";
 import Subtitle from "@/components/Subtitle";
 import Title from "@/components/Title";
 import { getPostData } from "@/lib/post";
-import showdown from "showdown";
-const converter = new showdown.Converter();
-converter.setFlavor("github");
+
+import type { Metadata, ResolvingMetadata } from "next";
+
+export async function generateMetadata(
+  { params }: { params: { slug: string } },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { slug } = params;
+  const { title } = await getPostData(slug);
+
+  return {
+    title: `Just Recipes - ${title}`,
+  };
+}
 
 export default async function Post({ params }: { params: { slug: string } }) {
   const { slug } = params;
